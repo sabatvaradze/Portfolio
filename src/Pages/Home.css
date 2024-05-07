@@ -1,0 +1,101 @@
+.main-cont{
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+}
+.img-cont img{
+    width: 400px;
+}
+.main-cont h1{
+    color: rgb(53, 52, 52);
+}
+.first-span{
+    font-size: 6rem;
+}
+.second-span{
+    font-size: 4rem;
+}
+.name-span{
+    font-size: 4.3rem;
+    color: #4070f4;
+}
+.icons{
+    font-size: 3rem;
+    color: #4070f4;
+}
+.icons:hover{
+    color: blue;
+    cursor: pointer;
+}
+.icons-container{
+    margin-top: 2rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.buttonn{
+    padding: 0.9rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+    width: 30%;
+    margin-top: 3vh;
+    margin-left: 1vh;
+    border: none;
+    background-color: #4070f4;
+    border-radius: 7px;
+}
+.buttonn:hover{
+    background-color: blue;
+    cursor: pointer;
+    scale: 1.1;
+}
+/* For small screens */
+@media only screen and (max-width: 600px) {
+    .main-cont {
+        flex-direction: column;
+        height: auto; /* Adjust height as needed */
+    }
+    .img-cont img {
+        width: 80%; /* Adjust width as needed */
+        max-width: 300px; /* Maximum width for smaller screens */
+    }
+    .main-cont h1 {
+        font-size: 2.5rem; /* Adjust font size as needed */
+        margin-top: 1rem; /* Adjust spacing as needed */
+    }
+    .first-span {
+        font-size: 4rem; /* Adjust font size as needed */
+    }
+    .second-span {
+        font-size: 3rem; /* Adjust font size as needed */
+    }
+    .name-span {
+        font-size: 3.5rem; /* Adjust font size as needed */
+    }
+    .icons-container {
+        flex-wrap: wrap; /* Allow icons to wrap to new line */
+        margin-top: 1rem; /* Adjust spacing as needed */
+    }
+    .buttonn {
+        width: 50%; /* Adjust width as needed */
+    }
+}
+
+/* For medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .main-cont {
+        gap: 5rem; /* Adjust gap as needed */
+    }
+}
+
+/* For large screens */
+@media only screen and (min-width: 1025px) {
+    .main-cont {
+        gap: 9rem; /* Default gap */
+    }
+}
